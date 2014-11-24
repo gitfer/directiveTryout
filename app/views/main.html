@@ -1,0 +1,39 @@
+<div class="row marketing">
+<div ng-controller="MainCtrl">
+  <contatto></contatto>
+</div>
+
+<div ng-controller="AboutCtrl">
+  <contatto></contatto>
+</div>
+<hr />
+<div ng-controller="MainCtrl">
+  <isolate-scope customer="contatto"></isolate-scope>
+</div>
+
+<hr />
+<div ng-controller="MainCtrl">
+  <isolate-scope customer="contatto"></isolate-scope>
+</div>
+
+<hr />
+<div ng-controller="MainCtrl">
+  <transclusion nome="contatto.nome">
+    <strong>{{contatto.nome}}BBB</strong>
+  </transclusion>
+</div>
+
+<hr />
+<div ng-controller="MainCtrl">
+  <external-behaviour close="chiudi()">
+    <p>Content</p>
+  </external-behaviour>
+</div>
+
+<hr />
+<div ng-controller="MainCtrl">
+<communicating-exposer>
+  </communicating-exposer>
+</div>
+
+</div>
